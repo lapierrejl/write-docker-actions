@@ -1,0 +1,7 @@
+name: "repo access test"
+
+description: "Testing repo access"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
