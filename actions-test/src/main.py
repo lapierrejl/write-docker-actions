@@ -1,3 +1,3 @@
-
-with open('/github/workspace/README.MD') as f:
+import os
+with open('./README.MD') as f:
     print(f.read())
