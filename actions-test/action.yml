@@ -7,6 +7,9 @@ inputs:
 runs:
   using: "composite"
   steps:
+    - name: install-deps
+      shell: bash
+      run: pip install --no-cache-dir -r ${{ github.action_path }}/requirements.txt
     - name: get-info
       shell: bash
       working-directory: ${{ inputs.working_directory }}
