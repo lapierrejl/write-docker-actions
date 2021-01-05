@@ -11,3 +11,8 @@ runs:
       shell: bash
       working-directory: ${{ inputs.working_directory }}
       run: python ${{ github.action_path }}/src/main.py
+    - name: env
+      shell: bash
+      working-directory: ${{ inputs.working_directory }}
+      run: env 
+    
