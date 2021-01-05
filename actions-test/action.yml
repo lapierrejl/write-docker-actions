@@ -1,7 +1,13 @@
 name: "repo access test"
 
 description: "Testing repo access"
-
+inputs:
+  working_directory:
+    requiered: true  
 runs:
-  using: "docker"
-  image: "Dockerfile"
+  using: "composite"
+  steps:
+    - name: get-info
+      shell: bash
+      working-directory: ${{ inputs.working_directory }}
+      run: python ${{ github.action_path }}/src/main.py
