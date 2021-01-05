@@ -17,4 +17,5 @@ runs:
       run: env 
     - name: workdir
       run: echo ${{ inputs.working_directory }}
+      shell: bash
     
