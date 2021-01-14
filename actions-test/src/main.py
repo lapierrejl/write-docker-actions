@@ -11,4 +11,4 @@ OUTPUT_PATH = args.output_path
 
 now = int(time.time())
 with open('README.md', 'w') as f:
-    f.write(f"# {now} {OUTPUTPATH}")
+    f.write(f"# {now} {OUTPUT_PATH}")
