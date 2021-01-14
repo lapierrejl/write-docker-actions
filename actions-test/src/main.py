@@ -1,8 +1,6 @@
 
-from random import seed
-from random import randint
+import time
 
-seed(1)
-value = randint(0, 100)
+now = int(time.time())
 with open('README.md', 'w') as f:
-    f.write(f"# {value}")
+    f.write(f"# {now}")
